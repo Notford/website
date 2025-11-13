@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kwame Osei Tutu Fordjour | Fullstack Developer, Graphic Designer, Creative Tech Entrepreneur | Available for remote work">
+  <meta name="description" content="Kwame Osei Tutu Fordjour | Fullstack Developer, Graphic Designer, Creative Tech Entrepreneur | Remote-ready">
   <title>Notford Jnr | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -13,7 +13,7 @@
   <!-- Header -->
   <header>
     <h1>KWAME OSEI TUTU FORDJOUR</h1>
-    <p class="tagline">Fullstack Developer | Graphic Designer | Creative Tech Entrepreneur</p>
+    <p class="tagline">Fullstack Developer | Graphic Designer | Creative Tech Entrepreneur | Remote-ready</p>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -25,22 +25,22 @@
   </header>
 
   <!-- Hero -->
-  <section id="hero">
+  <section id="hero" class="section">
     <h2>Creative Developer. Graphic Designer. Visionary.</h2>
-    <p>I craft impactful digital solutions through fullstack development, graphic design, photography, and IT consulting. Based in Accra, Ghana — creating for the world.</p>
+    <p>I craft impactful digital solutions through fullstack development, graphic design, photography, and IT consulting. Available for remote work globally.</p>
     <a href="#contact" class="btn-hero">Hire Me / Let's Collaborate</a>
   </section>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" class="section">
     <h2>About Me</h2>
     <p>I’m Kwame Osei Tutu Fordjour (Notford Jnr), a multidisciplinary creative and tech entrepreneur. As the founder and CEO of Notford Studios & IT Solutions, I specialize in fullstack software development, graphic design, photography, and videography — helping brands tell their stories and build a powerful digital presence.</p>
     <p>With experience spanning IT management, retail, and creative arts, I bring a unique perspective that blends technical skill with artistic vision. I am passionate about crafting tailored digital solutions that are functional, visually compelling, and business-focused.</p>
-    <p>Core skills include: Fullstack Software Development, Graphic Design & Branding, Photography & Videography, IT Consulting & Project Management.</p>
+    <p>Core skills include: Fullstack Software Development, Graphic Design & Branding, Photography & Videography, IT Consulting & Project Management. I am highly motivated for remote collaborations and freelance opportunities across the globe.</p>
   </section>
 
   <!-- Tech Stack -->
-  <section id="tech-stack">
+  <section id="tech-stack" class="section">
     <h2>Tech Stack</h2>
     <div class="tech-icons">
       <img src="assets/js.png" alt="JavaScript">
@@ -56,29 +56,53 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
+  <section id="projects" class="section">
+    <h2>Projects & Portfolio Highlights</h2>
     <div class="projects-grid">
+
       <div class="project-card">
         <h3>Notford Studios Website</h3>
-        <p>Creative agency website for IT, media, and branding services. <a href="https://github.com/Notford/notford-website" target="_blank">View on GitHub</a></p>
+        <p>Lead Developer & Designer for a creative agency website showcasing IT, media, and branding services.</p>
+        <p>Built a responsive, modern website improving client engagement. Tech: HTML, CSS, JavaScript, WordPress. 
+          <a href="https://github.com/Notford/notford-website" target="_blank">View on GitHub</a></p>
       </div>
+
       <div class="project-card">
         <h3>Alpha Production Reels App</h3>
-        <p>Automated short video editing tool for spoken-word content. <a href="https://github.com/Notford/alpha-production" target="_blank">View on GitHub</a></p>
+        <p>Fullstack Developer for an automated short video editing tool tailored for spoken-word content creators.</p>
+        <p>Streamlined video production, reducing manual editing by 60%. Tech: Python, Node.js, FFmpeg. 
+          <a href="https://github.com/Notford/alpha-production" target="_blank">View on GitHub</a></p>
       </div>
+
       <div class="project-card">
         <h3>IT Solutions Dashboard</h3>
-        <p>Business management software including invoicing, document handling, and payment integration. <a href="https://github.com/Notford/itsolutions-dashboard" target="_blank">View on GitHub</a></p>
+        <p>Fullstack Developer creating a business management dashboard for SMEs with invoicing, document handling, and payment integration.</p>
+        <p>Enhanced workflow efficiency and data organization. Tech: PHP, MySQL, JavaScript, Bootstrap. 
+          <a href="https://github.com/Notford/itsolutions-dashboard" target="_blank">View on GitHub</a></p>
       </div>
+
+      <div class="project-card">
+        <h3>AlphaHFT Trading Bot</h3>
+        <p>Lead Developer for a high-frequency scalping trading bot for XAU/USD using MT5 (MQL5 & Python integration).</p>
+        <p>Designed advanced risk management and breakout detection strategies. Tech: MQL5, Python. 
+          <a href="https://github.com/Notford/AlphaHFT" target="_blank">View on GitHub</a></p>
+      </div>
+
+      <div class="project-card">
+        <h3>Notford Studios Media Reels</h3>
+        <p>Fullstack & Creative Developer for short-form video content automation and editing platform for social media campaigns.</p>
+        <p>Improved turnaround time for 30–60 second reels. Tech: Python, Premiere Pro Automation, FFmpeg. 
+          <a href="https://github.com/Notford/media-reels" target="_blank">View on GitHub</a></p>
+      </div>
+
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:kwame.notford@gmail.com">kwame.notford@gmail.com</a></p>
-    <p>Location: Accra, Ghana | Available for remote work</p>
+    <p>Location: Accra, Ghana | Available for remote work globally</p>
     <form action="https://formspree.io/f/yourformid" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
@@ -99,6 +123,21 @@
       <a href="#">YouTube</a>
     </p>
   </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
 
 </body>
 </html>
