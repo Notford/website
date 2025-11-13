@@ -63,36 +63,31 @@
       <div class="project-card">
         <h3>Notford Studios Website</h3>
         <p>Lead Developer & Designer for a creative agency website showcasing IT, media, and branding services.</p>
-        <p>Built a responsive, modern website improving client engagement. Tech: HTML, CSS, JavaScript, WordPress. 
-          <a href="https://github.com/Notford/notford-website" target="_blank">View on GitHub</a></p>
+        <p>Tech: HTML, CSS, JavaScript, WordPress. <a href="https://github.com/Notford/notford-website" target="_blank">View on GitHub</a></p>
       </div>
 
       <div class="project-card">
         <h3>Alpha Production Reels App</h3>
-        <p>Fullstack Developer for an automated short video editing tool tailored for spoken-word content creators.</p>
-        <p>Streamlined video production, reducing manual editing by 60%. Tech: Python, Node.js, FFmpeg. 
-          <a href="https://github.com/Notford/alpha-production" target="_blank">View on GitHub</a></p>
+        <p>Automated short video editing tool for spoken-word content creators.</p>
+        <p>Tech: Python, Node.js, FFmpeg. <a href="https://github.com/Notford/alpha-production" target="_blank">View on GitHub</a></p>
       </div>
 
       <div class="project-card">
         <h3>IT Solutions Dashboard</h3>
-        <p>Fullstack Developer creating a business management dashboard for SMEs with invoicing, document handling, and payment integration.</p>
-        <p>Enhanced workflow efficiency and data organization. Tech: PHP, MySQL, JavaScript, Bootstrap. 
-          <a href="https://github.com/Notford/itsolutions-dashboard" target="_blank">View on GitHub</a></p>
+        <p>Business management dashboard for SMEs with invoicing, document handling, and payment integration.</p>
+        <p>Tech: PHP, MySQL, JavaScript, Bootstrap. <a href="https://github.com/Notford/itsolutions-dashboard" target="_blank">View on GitHub</a></p>
       </div>
 
       <div class="project-card">
         <h3>AlphaHFT Trading Bot</h3>
-        <p>Lead Developer for a high-frequency scalping trading bot for XAU/USD using MT5 (MQL5 & Python integration).</p>
-        <p>Designed advanced risk management and breakout detection strategies. Tech: MQL5, Python. 
-          <a href="https://github.com/Notford/AlphaHFT" target="_blank">View on GitHub</a></p>
+        <p>High-frequency scalping trading bot for XAU/USD using MT5 (MQL5 & Python integration).</p>
+        <p>Tech: MQL5, Python. <a href="https://github.com/Notford/AlphaHFT" target="_blank">View on GitHub</a></p>
       </div>
 
       <div class="project-card">
         <h3>Notford Studios Media Reels</h3>
-        <p>Fullstack & Creative Developer for short-form video content automation and editing platform for social media campaigns.</p>
-        <p>Improved turnaround time for 30–60 second reels. Tech: Python, Premiere Pro Automation, FFmpeg. 
-          <a href="https://github.com/Notford/media-reels" target="_blank">View on GitHub</a></p>
+        <p>Short-form video content automation and editing platform for social media campaigns.</p>
+        <p>Tech: Python, Premiere Pro Automation, FFmpeg. <a href="https://github.com/Notford/media-reels" target="_blank">View on GitHub</a></p>
       </div>
 
     </div>
@@ -109,7 +104,7 @@
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-    <a href="Kwame CV 2025.pdf" download class="btn-cv">Download My CV</a>
+    <a href="Kwame_CV_2025.pdf" download class="btn-cv">Download My CV</a>
   </section>
 
   <!-- Footer -->
@@ -124,20 +119,7 @@
     </p>
   </footer>
 
-  <!-- Scroll Animation Script -->
-  <script>
-    const sections = document.querySelectorAll('.section');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.2 });
-
-    sections.forEach(section => observer.observe(section));
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
